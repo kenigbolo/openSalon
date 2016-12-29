@@ -13,7 +13,10 @@ gem 'omniauth'
 
 group :development, :test do
   gem 'byebug', platform: :mri
-  gem 'letter_opener'
+  gem 'rspec-rails', '~> 3.5'
+  gem 'factory_girl'
+  gem 'capybara'
+  gem 'faker'
 end
 
 group :development do
@@ -22,6 +25,12 @@ group :development do
   gem 'spring'
   gem 'sqlite3'
   gem 'spring-watcher-listen', '~> 2.0'
+  gem 'letter_opener'
+end
+
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'database_cleaner'
 end
 
 group :production do
