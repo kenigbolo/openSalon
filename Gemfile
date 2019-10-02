@@ -15,7 +15,7 @@ end
 
 group :development do
   gem 'web-console'
-  gem 'listen', '~> 3.0'
+  gem 'listen', '~> 3.2'
   gem 'spring'
   gem 'sqlite3'
   gem 'spring-watcher-listen', '~> 2.0'
